@@ -1,0 +1,9 @@
+<div class="container">
+  <h2>Api Practise</h2>
+  <div class="row">
+    <div *ngFor="let item of profile" class="card col-2 p-3 text-center m-1" [routerLink]="[ '/profile',item.id]">
+      {{item.name}}
+    </div>
+  </div>
+  <div class="alert alert-danger" *ngIf="error">error</div>
+</div>
